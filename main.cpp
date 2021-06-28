@@ -86,7 +86,8 @@ int main(int argc, char** argv) {
 		}
 		fprintf(arquivo,"\n");
 	}
-	
+	fprintf(arquivo,"Codigo de Otavio Pereira Tristão");
+	cout<<"Codigo de Otavio Pereira Tristao"<<endl;
 	
 	
 	return 1;
