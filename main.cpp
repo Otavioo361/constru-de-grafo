@@ -14,10 +14,12 @@ int main(int argc, char** argv) {
 	int col= 0;
 	int m[100] [100];
 	int numeros;
+	int numbers;
 	int l;
 	int c;
 	int r;
 	int contador;
+	int counter;
 	
 	
 	FILE *arquivo;
@@ -26,6 +28,15 @@ int main(int argc, char** argv) {
 		printf("Nao deu");
 		exit(0);
 	}
+	// code in english
+	/*cout<< "enter the amount of line"<<endl;
+	cout<<"enter the ammount of column"<<endl;
+	for(counter= 1; counter<= max; counter){
+		cout<<"enter the numbers"<<endl;
+		cin>>numbers;
+		fprintf(arquivo, " %d ",numbers);	
+	}*/
+	// Parte que constroi  o grafo
 	cout<< "digite a quantidade de linha" << endl;
 	cin>>li; 
 	cout<<"Digite a quantidade de coluna" << endl;
@@ -53,7 +64,9 @@ int main(int argc, char** argv) {
 			txtFile >> m[i] [j];
 		}
 	}
-	
+	// code in  english
+	/*cout<<"Read size array"<< l << " x "<< c << endl;
+	cout<<"matrix contents in the file:"<< endl;*/ 
 	cout<<"Ler matriz de tamanho " <<  l  <<" x " << c <<endl;
 	cout<< "conteudo da matriz no arquivo:" << endl;
 	for(int i=0;i<l;i++)
@@ -72,6 +85,8 @@ int main(int argc, char** argv) {
 		printf("Nao deu");
 		exit(0);
 	}
+	// code in english 
+	//fprintf(arquivo, " matrix contents in the file:")
 	fprintf(arquivo,"conteudo da Matriz resultado:");
 	fprintf (arquivo,"%d", l);
 	fprintf(arquivo,"x");
